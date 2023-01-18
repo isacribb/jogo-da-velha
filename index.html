@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jogo da velha</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" defer></script>
+
+
+</head>
+
+<body>
+    <h1>Jogo da velha</h1>
+    <div id="buttons-container">
+        <button id="2-players">2 Jogadores</button>
+        <button id="ai-player">AI player</button>
+    </div>
+    <div>
+        <!--game-->
+        <div id="container" class="hide">
+            <div class="box" id="block-1" data-anime="data"></div>
+            <div class="box" id="block-2" data-anime="data"></div>
+            <div class="box" id="block-3" data-anime="data"></div>
+            <div class="box" id="block-4" data-anime="data"></div>
+            <div class="box" id="block-5" data-anime="data"></div>
+            <div class="box" id="block-6" data-anime="data"></div>
+            <div class="box" id="block-7" data-anime="data"></div>
+            <div class="box" id="block-8" data-anime="data"></div>
+            <div class="box" id="block-9" data-anime="data"></div>
+            <!--scorer-->
+            <div id="scoreboard-container">
+                <h2>Placar:</h2>
+                <span class="score-box">
+                    <span id="x-scoreboard">X</span>:
+                    <span id="scoreboard-1">0</span>
+                </span>
+                <span class="score-box">
+                    <span id="o-scoreboard"></span>:
+                    <span id="scoreboard-2">0</span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!--symbols-->
+    <div class="hide">
+        <div class="x">X</div>
+        <div class="o"></div>
+    </div>
+    <!--message for winner-->
+    <div id="message" class="hide">
+        <p>lkdkss</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    color:white;
+    background: linear-gradient(rgb(112, 6, 187), rgb(43, 13, 192));
+    height: 100vh;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 42px;
+    padding: 1em 0;
+}
+
+/* buttons */
+#buttons-container{
+    padding-bottom: 1em;
+    padding-top: 0;
+}
+
+#buttons-container button{
+    border: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    opacity: 0.9;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#buttons-container button:hover{
+    opacity: 1;
+}
+
+/* game */
+
+#container{
+    display: flex;
+    width: 300px;
+    margin: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box{
+    height: 100px;
+    border: 5px solid white;
+    box-sizing: border-box;
+    flex: 1 1 33%;
+    cursor: pointer;
+}
+
+.box:hover{
+    background-color: rgba(115, 7, 193, 0.766);
+}
+
+
+#block-1, #block-2, #block-3{
+    border-top: none;
+}
+#block-1, #block-4, #block-7{
+    border-left: none;
+}
+
+#block-7, #block-8, #block-9{
+    border-bottom: none;
+}
+
+#block-3, #block-6, #block-9{
+    border-right: none;
+}
+
+
+/* symbols */
+
+.x{
+    font-size: 65px;
+    color: red;
+    display: inline-block;
+    line-height: 100px;
+}
+
+.o{
+    width: 45px;
+    height: 45px;
+    border: 5px solid rgb(24, 196, 24);
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 17px;
+}
+
+/* hide class */
+
+    .hide{
+        display: none !important;
+    } 
+
+/* score */
+
+#scoreboard-container{
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 25px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, .3));
+    border-radius: 20px;
+    padding-bottom: .9em;
+}
+
+#scoreboard-container h2{
+    margin-top: .3em;
+}
+
+
+#x-scoreboard{
+    color: red;
+    margin-right: 3px;
+}
+
+#o-scoreboard{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgb(24, 196, 24);
+    border-radius: 50%;
+    margin-right: 3px;
+}
+
+.score-box{
+    margin: 1em;
+}
+
+/* message */
+
+#message p{
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 150px;
+    width: 250px;
+    font-size: 40px;
+    font-weight: bold;
+    
+    background:linear-gradient(rgba(255,255,255, .9),rgba(255,255,255, .9));
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border: 5px dotted rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
